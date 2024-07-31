@@ -1,0 +1,50 @@
+'''
+Al finalizar guardarlo con formato .utf8
+// Formato GIFT
+
+
+// Opcion Multiple
+:: Titulo de la pregunta ::
+Ingresa tu pregunta
+{ (Aqui empieza a escribir tus respuestas)
+=Tu respuesta correcta
+~Tu respuesta incorrecta
+} (Termina la respuestas y se cierra)
+
+Ejemplo:
+:: P1-Lenguas-Sem1-Ac1
+:: 10 + 10 x 10 =
+{
+    =110
+    =200
+    ~150
+    ~100
+}
+
+Ejemplo:
+:: P2-Lenguas-Ac1
+:: ¿Que facultades hay en el campus aeropuerto?
+{
+    =%50%Lenguas y Letras
+    =%-100%Informatica
+    =%50%Derecho
+    =%-100%Contaduria y Administracion
+}
+
+// Verdadero o Falso
+:: Titulo de la pregunta ::
+Ingresa tu pregunta
+{ (Aqui empieza a escribir tus respuestas)
+FALSE o F
+TRUE o T
+} (Termina las respuestas y se cierra)
+
+Ejemplo:
+:: P3-Quimica-Ac1
+:: ¿La manzana es buena?
+{T}
+
+
+
+
+guardar como utf-8

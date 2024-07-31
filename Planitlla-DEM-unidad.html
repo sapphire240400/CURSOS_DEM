@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css\prueba2.css" rel="stylesheet">
+  
+</head>
+
+<body>
+
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       BANNER       ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+<div class="bann_sect" style="max-width: 100%; background-image: url('https://cite.uaq.mx/cite/pluginfile.php/4548/mod_folder/content/0/RG__BANNER_1.png');"></div>
+
+
+
+<div class=" main-curso" style="margin-bottom: 0px; margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       SIDEBAR         ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+    <div class="tabs" id="myTabs">
+
+        <!-- MENU FLECHAS -->
+        <button class="pre" onclick="showPreviousTab()"> &lt;</button>
+        <!-- MENU FLECHAS -->
+
+        <!--Tabs -->
+        <div class="tab-button-curso" onclick="showTab(event)">Introducción</div>
+        <div class="tab-button-curso" onclick="showTab(event)" >Tema x. Texto </div>
+        <div class="tab-button-curso" onclick="showTab(event)" style="    padding-left: 3vw;">Actividades</div>
+
+    <!--!NOTA:  EN CASO DE QUE HAYA MÁS DE UN TEMA, AGREGAR LAS TABS Y SUS RESPECTIVOS 'tab-content-curso'
+        <div class="tab-button-curso" onclick="showTab(event)" >Tema x. Texto </div>
+        <div class="tab-button-curso" onclick="showTab(event)" style="    padding-left: 3vw;">Actividades</div>         -->
+
+        <div class="tab-button-curso" onclick="showTab(event)">Cierre</div>
+
+        <!-- MENU FLECHAS -->
+        <button class="next" onclick="showNextTab()"> &gt; </button>
+        <!-- MENU FLECHAS -->
+
+    </div>
+
+
+
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       UNIDADES         ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+    <div class="tab-wrapper_act">
+        <div id="content">
+
+            <!-- MADRE 1 -->
+            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
+                
+                <div class="ind_sect">  <h2 style="text-align:center;">Introducción </h2>    </div>
+                <hr><br>
+
+                <p>Bienvenida/o a la <strong style="color: #0E3C61;">Unidad X</strong> texto texto texto...</p>
+                <br>
+
+
+
+
+                <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ;;  OBJETIVOS DE LA UNIDAD  ;;
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; -->
+                <p><strong style="color: #0E3C61;">Objetivos de la unidad:</strong>  Texto texto texto...</p>
+                <br>
+
+
+
+
+                <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ;;  ORGANIZACION DE UNIDAD | GUIA ACADEMICA ;;
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; -->
+                <hr><br>
+                <h5 style="text-align:center;">Organización de la unidad</h5>
+                <div class="row" style="align-items: center; justify-content: left; margin-right: 0px; margin-left: 0px;">                        
+                        <div class="col-xs-12 col-md-8" >
+                             <p>Text_guia_academica</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4" style="text-align: justify;">
+                            <center>
+                                <a href="remplazarURL" target="_blank">
+                                <div class="image-container">
+                                        <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/guiaacademica1.png" alt="Primera Imagen" >
+                                        <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/guiaacademica2.png" alt="Segunda Imagen" class="second-image">
+                                </div>
+                                </a>
+
+                            </center>
+                        </div>
+                </div>
+
+
+
+
+                <!--    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                        ;;     DESARROLLO TEMATICO  ;;
+                        ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; -->
+                <hr><br>
+                <h5 style="text-align:center;">Sobre el desarrollo temático y otras fuentes de consulta</h5>
+                <br>
+                
+                <p>Text_introduccion_referencias</p>
+                <br>
+
+                <center>
+                <button type="button" class="collapsible-curso">
+                     <strong>titulo_referencias </strong>
+                       <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/ICO_DROPDOWN.png" style="max-width: 22px;">
+                </button>
+
+                <div class="content-collapse-curso">
+                        <br><!-- Mantener espacios -->
+                            <ol style="list-style: outside;">
+                                <li>
+                                    <div class="animate-latido"> 
+                                        referencia_con_url
+                                        <a href="remplazarURL" target="_blank"> <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/ICO_REFCON.png" style="max-width: 30px; "></a> 
+                                    </div>
+                                </li>
+                                <br>
+                                <li>
+                                    text_sin_url
+                                </li>
+                            </ol>
+                        <br><!-- Mantener espacios -->
+                </div>
+                </center>
+                <br><br>
+                
+                <!-- !NOTA: EN CASO DE TENER MAS DE UNA 'CATEGORIA' DE REFERENCIAS COPIAR Y PEGAR LAS VECES QUE SEA NECESARIO, ENTRE CADA COLLAPSE DEJAR 2 <BR>  -->
+
+
+
+
+            </div>  <!--End marco general -->
+            </div>  <!-- / MADRE 1 -->
+
+
+
+
+            <!-- MADRE 2 -->
+            <div class="tab-content-curso" style="display: none;">
+                <div class="ind_sect"> <h2 style="text-align:center;">Inclusión educativa </h2> </div>
+                <hr><br>
+
+                <div class="button-container-subtabs">
+                    <button class="toggle-button-subtabs " data-target="content-subtabs active-content-subtabs" >titulo_subtema_1</button>
+                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_2</button>
+                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_3</button>
+                </div>
+
+                <!-- ===== btn1 ===== -->
+                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
+                    contenido_subtema_1
+                </div>
+
+
+                <!-- ===== btn2 ===== -->
+                <div id="content-subtabs" class="content-subtabs">
+                   contenido_subtema_2
+                </div>
+
+                <!-- ===== btn3 ===== -->
+                <div id="content-subtabs" class="content-subtabs">
+                    contenido_subtema_3
+                </div>
+                <br><br>
+            </div>
+            <!-- /MADRE 2 -->
+
+
+
+
+            <!-- MADRE 3 -->
+            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
+                <div class="ind_sect">  <h2 style="text-align:center;">Actividades</h2> </div>
+                <hr><br>
+
+                <p>text_intro_act</p>
+
+                <div class="seccion_act" >
+                    <div class="sec_1">
+                        <div class="titulo-act" > Actividad num</div>  
+                            <strong>
+                                <p style="text-align:center!important">titulo_actividad_foro</p>
+                            </strong>
+                            
+                            <center>
+                            <a href="remplazarURL" target="_blank">
+                            <div class="image-container2" style="max-width:50%">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_1.png" alt="Primera Imagen">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_2.png" alt="Segunda Imagen" class="second-image2">
+                            </div>
+                            </a> 
+                            <br>    Haz clic en la imagen para acceder.
+                            </center>
+                    </div>
+
+                    <div class="sec_2">
+                        <div class="titulo-act" > Actividad num</div>  
+                            <strong>
+                                <p style="text-align:center!important">titulo_actividad_tarea</p>
+                            </strong>
+                            
+                            <center>
+                            <a href="remplazarURL" target="_blank">
+                            <div class="image-container2" style="max-width:50%">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad1.png" alt="Primera Imagen">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad2.png" alt="Segunda Imagen" class="second-image2">
+                            </div>
+                            </a> 
+                            <br>    Haz clic en la imagen para acceder.
+                            </center>
+                    </div>
+                </div>
+
+                </div>  <!-- End marco general -->
+            </div>  <!-- /MADRE 3 -->
+
+
+
+
+    <!--   !NOTA: EN CASO DE QUE HAYA MAS DE UN TEMA SE DEBEN AGREGAR SUS PESTAÑAS RESPECTIVAS
+
+            ;;;;;;;;;;;;;;;;;;;
+            ;;; MADRE TEMA2 ;;;
+            ;;;;;;;;;;;;;;;;;;;
+
+            <div class="tab-content-curso" style="display: none;">
+                <div class="ind_sect"> <h2 style="text-align:center;">Inclusión educativa </h2> </div>
+                <hr><br>
+
+                <div class="button-container-subtabs">
+                    <button class="toggle-button-subtabs " data-target="content-subtabs active-content-subtabs" >titulo_subtema_1</button>
+                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_2</button>
+                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_3</button>
+                </div>
+
+                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
+                    contenido_subtema_1
+                </div>
+
+                <div id="content-subtabs" class="content-subtabs">
+                   contenido_subtema_2
+                </div>
+
+                <div id="content-subtabs" class="content-subtabs">
+                    contenido_subtema_3
+                </div>
+                <br><br>
+            </div>
+
+            ;;;;;;;;;;;;;;;;;;;;;;;
+            ;;; MADRE TEMA2_ACT ;;;
+            ;;;;;;;;;;;;;;;;;;;;;;;
+
+            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
+                <div class="ind_sect">  <h2 style="text-align:center;">Actividades</h2> </div>
+                <hr><br>
+
+                <p>text_intro_act</p>
+
+                <div class="seccion_act" >
+                    <div class="sec_1">
+                        <div class="titulo-act" > Actividad num</div>  
+                            <strong>
+                                <p style="text-align:center!important">titulo_actividad</p>
+                            </strong>
+                            
+                            <center>
+                            <a href="remplazarURL" target="_blank">
+                            <div class="image-container2" style="max-width:50%">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_1.png" alt="Primera Imagen">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_2.png" alt="Segunda Imagen" class="second-image2">
+                            </div>
+                            </a> 
+                            <br>    Haz clic en la imagen para acceder.
+                            </center>
+                    </div>
+
+                    <div class="sec_2">
+                        <div class="titulo-act" > Actividad num</div>  
+                            <strong>
+                                <p style="text-align:center!important">titulo_actividad</p>
+                            </strong>
+                            
+                            <center>
+                            <a href="remplazarURL" target="_blank">
+                            <div class="image-container2" style="max-width:50%">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad1.png" alt="Primera Imagen">
+                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad2.png" alt="Segunda Imagen" class="second-image2">
+                            </div>
+                            </a> 
+                            <br>    Haz clic en la imagen para acceder.
+                            </center>
+                    </div>
+                </div>
+
+                </div>  
+            </div> -->
+
+
+
+
+            <!-- MADRE 4 -->
+            <div class="tab-content-curso" style="display: none;"> <div class="marco-general">
+                <div class="ind_sect">  <h2 style="text-align:center;">Cierre</h2>  </div>
+                <hr><br>
+
+                <p>text_cierre</p> 
+                
+                <br><br>
+                </div> <!--End marco general -->
+            </div>  <!-- /MADRE 4 -->
+
+
+
+
+            <!-- BOTON SCROLL -->
+            <button onclick="scrollToTop()" id="back-to-top-curso">
+                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/ICO_UP.png" style="max-width: 20px;">
+            </button>
+
+        </div> <!-- / content -->
+    </div> <!--  /tab-wrapper_act -->
+
+
+</div><!-- /End  main-curso -->
+
+
+
+
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       FOOTER         ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+<div class="separador"></div>
+<div class="footer-cursoEMU">
+    <div class="footer-cursoEMU-item"><img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/LOGO_CITE.png" style="max-width:100%"></div> 
+    <div class="footer-cursoEMU-item"><img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/LOGO_DEM.png"></div>
+    <div class="footer-cursoEMU-item"><img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/LOGO_UAQ.png"></div>
+    <div class="footer-cursoEMU-item"><img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/LOGO-FPyE.png"></div>
+    <div class="footer-cursoEMU-item">
+        Doctorado en Educación Multimodal <br>
+        Facultad de Psicología y Educación  <br>
+        Universidad Autónoma de Querétaro
+    </div>
+    <div class="footer-cursoEMU-item">
+        <div class="redes_sociales_md" style="display: flex;">
+            <center>
+                <a href="https://www.facebook.com/share/AzQcuvEp65Q7VoZ6/?mibextid=qi2Omg" target="_blank">
+                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RS_ICO_FACE.png" style="max-width: 20%; ">    
+                </a>
+                <a href="https://www.facebook.com/share/dowDL8nDM8Wf2hbh/?mibextid=qi2Omg" target="_blank">
+                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RS_ICO_FACE2.png" style="max-width: 20%;">
+                </a>
+            </center>
+        </div>
+    </div> 
+</div>
+
+
+
+
+<!-- ===== 
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;       SCRIPTS         ;;    
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+===== -->
+<script >
+    var coll = document.getElementsByClassName("collapsible-curso");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active-collapse");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+</script>
+<script>
+    var style = document.createElement("link");
+    document.head.appendChild(style);
+    style.setAttribute("rel", "stylesheet");
+    style.setAttribute("href",
+        "https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/css/prueba2.css"
+    );
+</script>
+<script src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/js/tabs_final_12.js"></script>
+<script src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/js/bttnAct.js"></script>
+<script src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/js/backtotop.js"></script>
+<script src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/js/modal.js"></script>
+</body>
+
+
+
+
+</html>
