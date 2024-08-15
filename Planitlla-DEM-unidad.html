@@ -17,7 +17,7 @@
     ;;       BANNER       ;;    
     ;;;;;;;;;;;;;;;;;;;;;;;;
 ===== -->
-<div class="bann_sect" style="max-width: 100%; background-image: url('remplazarURL');"></div>
+<div class="bann_sect" style="max-width: 100%; background-image: url('remplazarURL'); background: lightblue;"> Quiten_el_style_del_background_y_este_texto_solo_actualicen_el_banner</div>
 
 
 
@@ -35,13 +35,13 @@
 
         <!--Tabs -->
         <div class="tab-button-curso" onclick="showTab(event)">Introducción</div>
+        <div class="tab-button-curso" onclick="showTab(event)">Guía académica</div>
         <div class="tab-button-curso" onclick="showTab(event)" >Tema x. Texto </div>
-        <div class="tab-button-curso" onclick="showTab(event)" style="    padding-left: 3vw;">Actividades</div>
 
     <!--!NOTA:  EN CASO DE QUE HAYA MÁS DE UN TEMA, AGREGAR LAS TABS Y SUS RESPECTIVOS 'tab-content-curso'
-        <div class="tab-button-curso" onclick="showTab(event)" >Tema x. Texto </div>
-        <div class="tab-button-curso" onclick="showTab(event)" style="    padding-left: 3vw;">Actividades</div>         -->
+        <div class="tab-button-curso" onclick="showTab(event)" >Tema x. Texto </div>  -->
 
+        <div class="tab-button-curso" onclick="showTab(event)" style="    padding-left: 3vw;">Actividades</div>
         <div class="tab-button-curso" onclick="showTab(event)">Cierre</div>
 
         <!-- MENU FLECHAS -->
@@ -60,10 +60,10 @@
     <div class="tab-wrapper_act">
         <div id="content">
 
-            <!-- MADRE 1 -->
-            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
-                
-                <div class="ind_sect">  <h2 style="text-align:center;">Introducción </h2>    </div>
+
+            <!-- MADRE 0 -->
+            <div class="tab-content-curso" style="display: none;"><div class="marco-general">
+            <div class="ind_sect">  <h2 style="text-align:center;">Introducción </h2>    </div>
                 <hr><br>
 
                 <p>Bienvenida/o a la <strong style="color: #0E3C61;">Unidad X</strong> texto texto texto...</p>
@@ -143,9 +143,28 @@
                 <br><br>
                 
                 <!-- !NOTA: EN CASO DE TENER MAS DE UNA 'CATEGORIA' DE REFERENCIAS COPIAR Y PEGAR LAS VECES QUE SEA NECESARIO, ENTRE CADA COLLAPSE DEJAR 2 <BR>  -->
+            
+            </div>  <!--End marco general -->
+            </div>
+            <!-- /MADRE 0 -->
 
 
 
+            <!-- MADRE 1 -->
+            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
+
+
+                <div class="ind_sect">  <h2>Guía académica </h2>    </div>
+                <hr><br>
+                <p>text_relacionado_a_la_guia</p>
+                
+                <br>
+                <center>
+                    <div class="guia" style="width: 75%;margin: 0 auto; ">
+                        <iframe src="remplazarURL" style="  width: 100%; height: 100%;" allow="autoplay"></iframe>
+                    </div>
+                </center>
+                <br><br>
 
             </div>  <!--End marco general -->
             </div>  <!-- / MADRE 1 -->
@@ -154,36 +173,27 @@
 
 
             <!-- MADRE 2 -->
-            <div class="tab-content-curso" style="display: none;">
-                <div class="ind_sect"> <h2 style="text-align:center;">Inclusión educativa </h2> </div>
+            <div class="tab-content-curso" style="display: none;"><div class="marco-general">
+                <div class="ind_sect"> <h2 style="text-align:center;">Titulo_tema </h2> </div>
                 <hr><br>
-
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs active-content-subtabs" >titulo_subtema_1</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_2</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_3</button>
-                </div>
-
-                <!-- ===== btn1 ===== -->
-                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
-                    contenido_subtema_1
-                </div>
-
-
-                <!-- ===== btn2 ===== -->
-                <div id="content-subtabs" class="content-subtabs">
-                   contenido_subtema_2
-                </div>
-
-                <!-- ===== btn3 ===== -->
-                <div id="content-subtabs" class="content-subtabs">
-                    contenido_subtema_3
-                </div>
+                <p>text_tema</p>
                 <br><br>
+                </div>
             </div>
             <!-- /MADRE 2 -->
 
+<!--   !NOTA: EN CASO DE QUE HAYA MAS DE UN TEMA SE DEBEN AGREGAR SUS PESTAÑAS RESPECTIVAS
 
+  <div class="tab-content-curso" style="display: none;"><div class="marco-general">
+        <div class="ind_sect"> <h2 style="text-align:center;">Titulo_tema </h2> </div>
+        <hr><br>
+        <p>text_tema</p>
+        <br><br>
+        </div>
+    </div>
+
+
+    -->
 
 
             <!-- MADRE 3 -->
@@ -207,7 +217,8 @@
                                     <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_2.png" alt="Segunda Imagen" class="second-image2">
                             </div>
                             </a> 
-                            <br>    Da clic en el ícono para acceder.
+                            <br>  <strong>Da clic en el ícono para acceder.</strong>
+                            <br><p> Recuerda que para realizar esta actividad debes revisar el contenido del tema <strong>x</strong>.</p>
                             </center>
                     </div>
 
@@ -224,7 +235,8 @@
                                     <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad2.png" alt="Segunda Imagen" class="second-image2">
                             </div>
                             </a> 
-                            <br>    Da clic en el ícono para acceder.
+                            <br>  <strong>Da clic en el ícono para acceder.</strong>
+                            <br><p> Recuerda que para realizar esta actividad debes revisar el contenido del tema <strong>x</strong>.</p>
                             </center>
                     </div>
                 </div>
@@ -235,84 +247,7 @@
 
 
 
-    <!--   !NOTA: EN CASO DE QUE HAYA MAS DE UN TEMA SE DEBEN AGREGAR SUS PESTAÑAS RESPECTIVAS
-
-            ;;;;;;;;;;;;;;;;;;;
-            ;;; MADRE TEMA2 ;;;
-            ;;;;;;;;;;;;;;;;;;;
-
-            <div class="tab-content-curso" style="display: none;">
-                <div class="ind_sect"> <h2 style="text-align:center;">Inclusión educativa </h2> </div>
-                <hr><br>
-
-                <div class="button-container-subtabs">
-                    <button class="toggle-button-subtabs " data-target="content-subtabs active-content-subtabs" >titulo_subtema_1</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_2</button>
-                    <button class="toggle-button-subtabs" data-target="content-subtabs" >titulo_subtema_3</button>
-                </div>
-
-                <div id="content-subtabs" class="content-subtabs active-content-subtabs">
-                    contenido_subtema_1
-                </div>
-
-                <div id="content-subtabs" class="content-subtabs">
-                   contenido_subtema_2
-                </div>
-
-                <div id="content-subtabs" class="content-subtabs">
-                    contenido_subtema_3
-                </div>
-                <br><br>
-            </div>
-
-            ;;;;;;;;;;;;;;;;;;;;;;;
-            ;;; MADRE TEMA2_ACT ;;;
-            ;;;;;;;;;;;;;;;;;;;;;;;
-
-            <div class="tab-content-curso" style="display: none;">  <div class="marco-general">
-                <div class="ind_sect">  <h2 style="text-align:center;">Actividades</h2> </div>
-                <hr><br>
-
-                <p>text_intro_act</p>
-
-                <div class="seccion_act" >
-                    <div class="sec_1">
-                        <div class="titulo-act" > Actividad num</div>  
-                            <strong>
-                                <p style="text-align:center!important">titulo_actividad</p>
-                            </strong>
-                            
-                            <center>
-                            <a href="remplazarURL" target="_blank">
-                            <div class="image-container2" style="max-width:50%">
-                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_1.png" alt="Primera Imagen">
-                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/RG_FORO_2.png" alt="Segunda Imagen" class="second-image2">
-                            </div>
-                            </a> 
-                            <br>    Da clic en el ícono para acceder.
-                            </center>
-                    </div>
-
-                    <div class="sec_2">
-                        <div class="titulo-act" > Actividad num</div>  
-                            <strong>
-                                <p style="text-align:center!important">titulo_actividad</p>
-                            </strong>
-                            
-                            <center>
-                            <a href="remplazarURL" target="_blank">
-                            <div class="image-container2" style="max-width:50%">
-                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad1.png" alt="Primera Imagen">
-                                    <img src="https://cite.uaq.mx/cite/pluginfile.php/4486/mod_folder/content/0/img/actividad2.png" alt="Segunda Imagen" class="second-image2">
-                            </div>
-                            </a> 
-                            <br>    Da clic en el ícono para acceder.
-                            </center>
-                    </div>
-                </div>
-
-                </div>  
-            </div> -->
+    
 
 
 
